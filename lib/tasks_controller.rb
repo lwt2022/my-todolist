@@ -1,9 +1,9 @@
 require_relative 'tasks_view'
 
-class Taskcontroller
+class TasksController
   def initialize(repository)
     @repository = repository
-    @view = TaskView.new
+    @view = TasksView.new
   end
 
   def list
@@ -47,4 +47,4 @@ class Taskcontroller
     # 2. Send them to view for display
     @view.display(tasks)
   end
-  end
+end

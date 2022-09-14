@@ -30,7 +30,7 @@ class Router
     when 3 then @controller.mark_as_done
     when 4 then @controller.destroy
     else
-      puts "Please type 1,2,3or 4:)"
+      puts "Please type 1, 2, 3 or 4:)"
     end
   end
 end
