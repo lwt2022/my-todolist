@@ -1,8 +1,9 @@
 class Task
-  attr_reader :description
+  attr_reader :description, :deleted
 
-  def initialize(description)
+  def initialize(description, deleted)
     @description = description
+    @deleted = deleted
     @done = false
   end
 
@@ -10,8 +11,11 @@ class Task
     @done = true
   end
 
+  def deleted
+    @deleted = true || false
+  end
+
   def done?
     @done
   end
 end
-

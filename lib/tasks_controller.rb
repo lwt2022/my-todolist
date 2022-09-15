@@ -30,6 +30,10 @@ class TasksController
     task.mark_as_done!
   end
 
+  def deleted
+    
+  end
+
   def destroy
     # 1. Display list with indices
     display_tasks
