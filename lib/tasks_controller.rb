@@ -31,7 +31,10 @@ class TasksController
   end
 
   def deleted
-    
+    display_tasks
+    index = @view.ask_user_for_index
+    @repository.deleted(index)
+
   end
 
   def destroy

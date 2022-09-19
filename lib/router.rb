@@ -32,7 +32,7 @@ class Router
     when 4 then @controller.destroy
     when 5 then @controller.deleted
     else
-      puts "Please type 1, 2, 3 or 4:)"
+      puts "Please type 1, 2, 3, 4 or 5:)"
     end
   end
 end

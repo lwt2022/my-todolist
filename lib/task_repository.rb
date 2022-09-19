@@ -15,6 +15,11 @@ class TaskRepository
     @tasks[index]
   end
 
+  def deleted
+    @deleted = true
+
+  end
+
   def remove(index)
     @tasks.delete_at(index)
   end
